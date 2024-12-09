@@ -35,7 +35,10 @@ with open('saved_data.pkl', 'rb') as f:
 dic_for_each_ex = data['dic_for_each_ex']
 
 print("Data loaded successfully!")
+----------------------------------
+Data loaded successfully!
 ```
+dic_for_each_ex is a dictionary that (key: 題目; value: a dic containing found corresponding location (key) and its Power (value))
 
 
 

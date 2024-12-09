@@ -5,19 +5,21 @@
 - scikit-learn              1.5.1
 - scipy                     1.13.1
 
-## Important path to load data
 ## Data Pre-processing
 ### Data from T-brain
+important path:
 ```{python}
 TrainData_path = "./TrainData" (replace the path if needed)
 ```
 ### Data from HDARES
+important path:
 ```{python}
 Datapath = os.path.join(os.getcwd(), 'TrainData', 'additional', f'72T250_item_hour_20241127181859.csv') (replace the path if needed)
 ```
 
 ## Algorithm & Modeling
 ### Step 1
+important path in Step 1 
 ```{python}
 test_data_path = os.path.join(os.getcwd(), 'ExampleTestData', 'upload(no answer).csv')
 ...
@@ -47,6 +49,20 @@ like below:
  20240117093001: {8: 37.409, 17: 49.427},
 ...}
 ```
+
+### Step 2
+important path in Step 2:
+```{python}
+# Load the current location's data
+path = os.path.join(os.getcwd(), 'TrainData', 'processed', f'L{locationcode}_Train_processed.csv')
+...
+# Add HDARES data
+HDARES_imputed_df = pd.read_csv('./TrainData/additional/HDARES_imputed_df.csv')
+```
+Note: Step 2 wil take several hours to run
+
+
+
 
 
 

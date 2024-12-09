@@ -25,7 +25,7 @@ test_data_path = os.path.join(os.getcwd(), 'ExampleTestData', 'upload(no answer)
 ...
 Datapath = os.path.join(os.getcwd(), 'TrainData', 'processed', f'L{location}_Train_processed.csv')
 ```
-Since Step will run a while, we provide pickle file containing result of Step 1.
+Since Step 1 will run a while, we provide pickle file containing result of Step 1.
 ```{python}
 import pickle
 

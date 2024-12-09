@@ -39,7 +39,14 @@ print("Data loaded successfully!")
 Data loaded successfully!
 ```
 dic_for_each_ex is a dictionary that (key: 題目; value: a dic containing found corresponding location (key) and its Power (value))
-
+like below:
+```{python}
+{20240117090001: {8: 24.886000000000003, 17: 51.354},
+ 20240117091001: {8: 26.511000000000003, 17: 97.969},
+ 20240117092001: {8: 31.68, 17: 141.77100000000002},
+ 20240117093001: {8: 37.409, 17: 49.427},
+...}
+```
 
 
 

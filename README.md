@@ -7,5 +7,5 @@
 
 ## Data Pre-processing
 ### Data from T-brain
-
+'TrainData_path = "./TrainData" (replace the path if needed)'
 ### Data from HDARES

@@ -5,6 +5,7 @@
 - scikit-learn              1.5.1
 - scipy                     1.13.1
 
+## Important path to load data
 ## Data Pre-processing
 ### Data from T-brain
 ```{python}
@@ -14,3 +15,28 @@ TrainData_path = "./TrainData" (replace the path if needed)
 ```{python}
 Datapath = os.path.join(os.getcwd(), 'TrainData', 'additional', f'72T250_item_hour_20241127181859.csv') (replace the path if needed)
 ```
+
+## Algorithm & Modeling
+### Step 1
+```{python}
+test_data_path = os.path.join(os.getcwd(), 'ExampleTestData', 'upload(no answer).csv')
+...
+Datapath = os.path.join(os.getcwd(), 'TrainData', 'processed', f'L{location}_Train_processed.csv')
+```
+Since Step will run a while, we provide pickle file containing result of Step 1.
+```{python}
+import pickle
+
+# Load variables from the local file
+with open('saved_data.pkl', 'rb') as f:
+    data = pickle.load(f)
+
+# Extract the variables
+dic_for_each_ex = data['dic_for_each_ex']
+
+print("Data loaded successfully!")
+```
+
+
+
+

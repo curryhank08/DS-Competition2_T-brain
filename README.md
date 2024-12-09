@@ -7,5 +7,10 @@
 
 ## Data Pre-processing
 ### Data from T-brain
-'TrainData_path = "./TrainData" (replace the path if needed)'
+```{python}
+TrainData_path = "./TrainData" (replace the path if needed)
+```
 ### Data from HDARES
+```{python}
+Datapath = os.path.join(os.getcwd(), 'TrainData', 'additional', f'72T250_item_hour_20241127181859.csv') (replace the path if needed)
+```

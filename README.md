@@ -60,6 +60,7 @@ path = os.path.join(os.getcwd(), 'TrainData', 'processed', f'L{locationcode}_Tra
 HDARES_imputed_df = pd.read_csv('./TrainData/additional/HDARES_imputed_df.csv')
 ```
 Note: Step 2 wil take several hours to run
+Reference: Information of Step 1 from TEAM_6668
 
 
 
